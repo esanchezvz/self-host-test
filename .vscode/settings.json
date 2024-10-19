@@ -1,0 +1,16 @@
+{
+  "editor.defaultFormatter": "biomejs.biome",
+  "editor.formatOnSave": true,
+  "eslint.rules.customizations": [{ "rule": "*", "severity": "warn" }],
+  "eslint.workingDirectories": [
+    { "pattern": "apps/*/" },
+    { "pattern": "packages/*/" },
+    { "pattern": "tooling/*/" }
+  ],
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "tailwindCSS.experimental.classRegex": [
+    ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+    ["cx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+  ]
+}

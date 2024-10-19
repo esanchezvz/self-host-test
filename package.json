@@ -1,0 +1,24 @@
+{
+  "name": "@repository/monorepo",
+  "private": true,
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "format:check": "biome format . --log-level warn --log-kind compact",
+    "format": "biome format --write . --log-level error --log-kind compact",
+    "lint:check": "biome lint . --log-level warn --log-kind compact",
+    "lint": "biome lint --write . --log-level error --log-kind compact",
+    "typecheck": "turbo typecheck"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@types/node": "^20.16.13",
+    "eslint": "^9.13.0",
+    "turbo": "^2.2.1",
+    "typescript": "^5.6.3"
+  },
+  "packageManager": "pnpm@8.9.0",
+  "engines": {
+    "node": ">=20"
+  }
+}
